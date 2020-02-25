@@ -6,13 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btViewModel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Sumar ViewModel"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+    <Button
+        android:id="@+id/btUserViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ViewModel"
+        app:layout_constraintTop_toBottomOf="@+id/btViewModel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btLiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Data"
+        app:layout_constraintTop_toBottomOf="@id/btUserViewModel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btDataBinding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DataBinding"
+        app:layout_constraintTop_toBottomOf="@+id/btLiveData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btDBLABinding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DataBinding LiveData"
+        app:layout_constraintTop_toBottomOf="@+id/btDataBinding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
