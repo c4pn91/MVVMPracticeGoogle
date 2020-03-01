@@ -3,10 +3,7 @@ package com.example.mvvmpracticegoogle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mvvmpracticegoogle.ui.DataBindingActivity
-import com.example.mvvmpracticegoogle.ui.LiveDataActivity
-import com.example.mvvmpracticegoogle.ui.UserViewModelActivity
-import com.example.mvvmpracticegoogle.ui.ViewModelActivity
+import com.example.mvvmpracticegoogle.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -39,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
 
         btDBLABinding.setOnClickListener {
-            //startActivity(Intent(applicationContext, DBLDActivity::class.java))
+            startActivity(Intent(applicationContext, DBLDActivity::class.java))
         }
     }
 
